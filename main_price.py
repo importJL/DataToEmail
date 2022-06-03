@@ -20,7 +20,7 @@ if __name__ == '__main__':
     eth = ac.PriceChart.from_response(price_resp)
     fig_path = eth.build_candle_chart(return_path=True)
 
-    hotmail = ec.EmailManager.setup('outlook', name='test1')
+    hotmail = ec.EmailManager.setup('outlook', name='outlook')
     msg = ec.Email()
 
     txt_body_params = {

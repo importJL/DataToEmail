@@ -1,6 +1,6 @@
 {
   "profile": {
-    "test1": {
+    "outlook": {
       "sender": "email@example.com",
       "password": "password",
       "recipients": "email@example.com",

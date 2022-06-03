@@ -26,7 +26,7 @@ if __name__ == '__main__':
     lib.import_template(templ_path)
     body, body_type = lib.populate_articles(extracted_articles)
 
-    hotmail = ec.EmailManager.setup('outlook', name='test1')
+    hotmail = ec.EmailManager.setup('outlook', name='outlook')
     msg = ec.Email()
     msg.add_body(body, body_type)
 
