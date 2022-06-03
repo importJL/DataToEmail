@@ -1,0 +1,11 @@
+{
+  "newsapi": {
+    "key": "f81b0fce08484b9996001e95fd9750dc"
+  },
+  "newsdataio": {
+    "key": "pub_76428737d2609ac3ee107c279b8775f5219b"
+  },
+  "alphavantage": {
+    "key": "6RE07YY6GQJBUBPW"
+  }
+}

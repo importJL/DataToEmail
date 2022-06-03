@@ -1,0 +1,9 @@
+
+To {recipient_name},
+
+Kindly find the latest attached price chart for {coin_name}.
+
+For enquiries, please reply to support@emailautomate.com
+
+Regards,
+Email Support Team

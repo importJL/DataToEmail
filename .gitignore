@@ -1,0 +1,9 @@
+*.ipynb
+.idea/
+__pycache__/
+.vscode/
+icons/
+api_src_info/
+examples/*.json
+examples/*.jpeg
+examples/*.html
