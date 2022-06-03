@@ -1,5 +1,5 @@
-from email_components import EmailManager, Email
-from alphachart import PriceChart
+import DataToEmail.email_components as ec
+import DataToEmail.alphachart as ac
 import os
 import json
 import requests
@@ -17,11 +17,11 @@ if __name__ == '__main__':
     curr_dir = os.getcwd()
     templ_path = os.path.join(curr_dir, 'templates', 'text_body.txt')
     price_resp = get_data(curr_dir)
-    eth = PriceChart.from_response(price_resp)
+    eth = ac.PriceChart.from_response(price_resp)
     fig_path = eth.build_candle_chart(return_path=True)
 
-    hotmail = EmailManager.setup('outlook', name='test1')
-    msg = Email()
+    hotmail = ec.EmailManager.setup('outlook', name='test1')
+    msg = ec.Email()
 
     txt_body_params = {
         'recipient_name': 'Test',

@@ -1,5 +1,5 @@
-from email_components import EmailManager, Email
-from news import ArticleLib
+import DataToEmail.email_components as ec
+import DataToEmail.news as ns
 from newsapi import NewsApiClient
 import os
 import json
@@ -21,13 +21,13 @@ if __name__ == '__main__':
 
     news_resp = get_data(curr_dir, api=api)
 
-    lib = ArticleLib()
+    lib = ns.ArticleLib()
     extracted_articles = lib.collect(news_resp, api)
     lib.import_template(templ_path)
     body, body_type = lib.populate_articles(extracted_articles)
 
-    hotmail = EmailManager.setup('outlook', name='test1')
-    msg = Email()
+    hotmail = ec.EmailManager.setup('outlook', name='test1')
+    msg = ec.Email()
     msg.add_body(body, body_type)
 
     draft = msg.compose(hotmail, subject='Outlook Test')
