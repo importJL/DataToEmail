@@ -1,11 +1,11 @@
 {
   "newsapi": {
-    "key": "f81b0fce08484b9996001e95fd9750dc"
+    "key": "insert api key"
   },
   "newsdataio": {
-    "key": "pub_76428737d2609ac3ee107c279b8775f5219b"
+    "key": "insert api key"
   },
   "alphavantage": {
-    "key": "6RE07YY6GQJBUBPW"
+    "key": "insert api key"
   }
 }
