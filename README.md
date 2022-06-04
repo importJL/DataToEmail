@@ -42,7 +42,10 @@ To utilize automated e-mail preparation, personal e-mail credentials are needed 
 If you do not have an Outlook e-mail account, you may register one at https://outlook.live.com/owa/.
 
 #### Python
-All scripts are developed using Python programming language. To execute these scripts, download the latest software at https://www.python.org/. Further, to aid in your own development and enhancements to these scripts, you can download IDEs such as VS Code and PyCharm which can be found in the links below:
+All scripts are developed using Python programming language. To execute these scripts, download the software at https://www.python.org/downloads/.
+Installing the required libraries for this repository depend on the Python version you have or will get. It is required to use Python 3.9 if installing libraries by Pipenv (see below Instructions) or Other Python 3.xx versions if using Pip.
+
+Further, to aid in your own development and enhancements to these scripts, you can download IDEs such as VS Code and PyCharm which can be found in the links below:
 
 - Visual Studio (VS) Code - https://code.visualstudio.com/
 - PyCharm - https://www.jetbrains.com/pycharm/
