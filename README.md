@@ -6,6 +6,7 @@ Among these scripts, several folders are provided containing example outputs and
 
 ## Folder Organization
 The repository is organized in below schematic:
+```
 .
 ├── DataToEmail
 │   ├── __init__.py
@@ -25,6 +26,7 @@ The repository is organized in below schematic:
 ├── main_email.py
 ├── Pipfile
 └── README.md
+```
 
 ## Requisites
 #### API keys
@@ -61,30 +63,34 @@ All scripts are developed using Python programming language. To execute these sc
 5. Under config directory:
    - Input your Outlook account credentials in config.json file with the following parameters:
 
+```
    {
      "profile": {
        "outlook": {
-         "sender": "_<insert your e-mail address>_",
-         "password": "_<insert your e-mail password>_",
-         "recipients": "_<insert recipient e-mail address>_",
-         "cc": "_<insert recipient e-mail address>_" _(this is optional)_,
-         "bcc": "_<insert recipient e-mail address>_" _(this is optional)_
+         "sender": "<insert your e-mail address>",
+         "password": "<insert your e-mail password>",
+         "recipients": "<insert recipient e-mail address>",
+         "cc": "<insert recipient e-mail address>",             # (this is optional)
+         "bcc": "<insert recipient e-mail address>"             # (this is optional)
        }
      }
    }
+```
 
   - Input your API keys after registration from the above API sources in keys.json file
 
+```
    {
      "newsapi": {
-       "key": "_<insert api key>_"
+       "key": "<insert api key>"
      },
      "newsdataio": {
-       "key": "_<insert api key>_"
+       "key": "<insert api key>"
      },
      "alphavantage": {
-       "key": "_<insert api key>_"
+       "key": "<insert api key>"
      }
    }
+```
 
 5. After all dependencies are installed and config files are set, run either main_news.py or main_price.py via `pipenv run python {python script}` or `python {python script}` (if using virtualenv).
