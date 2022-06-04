@@ -12,7 +12,7 @@ from email.mime.multipart import MIMEMultipart
 
 def get_config(config_opt, file_name='config.json'):
     curr_dir = os.getcwd()
-    with open(os.path.join(curr_dir, '../config', file_name), 'r') as file:
+    with open(os.path.join(curr_dir, 'config', file_name), 'r') as file:
         details = json.loads(file.read())
     return details[config_opt]
 

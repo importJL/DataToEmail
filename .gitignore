@@ -1,4 +1,5 @@
 *.ipynb
+*.jpeg
 .idea/
 __pycache__/
 .vscode/
