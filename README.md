@@ -97,5 +97,7 @@ Further, to aid in your own development and enhancements to these scripts, you c
 ```
 
 5. After all dependencies are installed and config files are set, run either main_news.py or main_price.py via
+   
    (i) accessing your virtual environment: `pipenv shell` (if using Pipenv) or `.\Scripts\activate` (Windows) or `source ./bin/activate` (Linux) if using virtualenv
+   
    (ii) running Python script: `pipenv run {python script}` (for Pipenv) or `python {python script}` (for virtualenv).
